@@ -17,8 +17,8 @@ permissions:
 jobs:
   test:
     strategy:
-      fail-fast: true
-      matrix:
+      سریع شکست : درست است
+      ماتریس :
         os: [ubuntu-latest]
     runs-on: ${{ matrix.os }}
     steps:
@@ -36,3 +36,4 @@ jobs:
           cd /opt/hiddify-config/
           grep -q -e '-----Finished!-----' log/system/0-install.log 
           cd hiddify-panel;hiddifypanel all-configs
+را
